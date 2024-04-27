@@ -1,0 +1,41 @@
+header {
+  height: 100vh;
+  background: url("../../assets/img/bg-slider-06.jpg") center/cover;
+  padding: 30px 10% 0 10%;
+
+  * {
+    color: white;
+  }
+
+  nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+      width: 10%;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      &:first-of-type {
+        width: 80%;
+      }
+      &:nth-of-type(2) {
+        width: 10%;
+      }
+    }
+  }
+
+  .header-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
