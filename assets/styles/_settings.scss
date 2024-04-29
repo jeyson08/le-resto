@@ -16,6 +16,7 @@
 $color1: #a67245;
 $color2: #eeeeee;
 $color3: #a9a69e;
+$color4: #21201e;
 $font1: "allura";
 $font2: "poppins";
 $font3: "roboto";
@@ -27,7 +28,7 @@ $font3: "roboto";
 }
 
 body {
-  background: purple;
+  background: $color4;
 }
 
 li {
