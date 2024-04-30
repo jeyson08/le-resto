@@ -20,7 +20,7 @@ section.menus {
     width: 40%;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 
     li {
       color: white;
@@ -46,17 +46,89 @@ section.menus {
   }
 
   .menu-container {
-    width: 60%;
+    width: 55%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background: $color2;
     border-top: 5px solid $color1;
-    padding: 100px 2% 100px 2%;
+    padding: 50px 2% 50px 2%;
+    gap: 5%;
+    height: 860px;
+    z-index: 2;
 
     .menu {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 60% 1fr;
+      border-bottom: 1px dashed $color1;
+      padding: 5% 0 5% 0;
+
+      .menu-img {
+        border-radius: 100px;
+        height: 120px;
+        width: 120px;
+      }
+
+      &:first-of-type .menu-img {
+        background: url(../../assets/img/dish-item-01.jpg) center/cover;
+      }
+      &:nth-of-type(2) .menu-img {
+        background: url(../../assets/img/dish-item-02.jpg) center/cover;
+      }
+      &:nth-of-type(3) .menu-img {
+        background: url(../../assets/img/dish-item-03.jpg) center/cover;
+      }
+      &:nth-of-type(4) .menu-img {
+        background: url(../../assets/img/dish-item-04.jpg) center/cover;
+      }
+      &:nth-of-type(5) .menu-img {
+        background: url(../../assets/img/dish-item-05.jpg) center/cover;
+      }
+      &:nth-of-type(6) .menu-img {
+        background: url(../../assets/img/dish-item-06.jpg) center/cover;
+      }
+      &:nth-of-type(7) .menu-img {
+        background: url(../../assets/img/dish-item-07.jpg) center/cover;
+      }
+      &:nth-of-type(8) .menu-img {
+        background: url(../../assets/img/dish-item-08.jpg) center/cover;
+      }
+
+      .p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10% 0 10%;
+
+        h3 {
+          font-family: $font2;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 1rem;
+        }
+
+        p {
+          font-family: $font3;
+          text-transform: capitalize;
+          font-size: 1rem;
+        }
+      }
+
+      p:not(.p p) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $font3;
+        color: $color1;
+        font-size: 1.6rem;
+      }
     }
+  }
+  .bg-img {
+    background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+    width: 100%;
+    height: 800px;
+    margin-top: -700px;
   }
 }
