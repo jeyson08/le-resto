@@ -1,0 +1,50 @@
+section.event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h2 {
+    font-family: $font1;
+    color: $color1;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+
+  h1 {
+    font-family: $font2;
+    color: $color6;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-top: -15px;
+  }
+
+  img {
+    transform: scale(1.2);
+    margin: 30px 0;
+  }
+
+  .event-container {
+    background: $color2;
+    width: 65%;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "un un trois"
+      "deux deux trois";
+
+    div:first-of-type {
+      grid-area: un;
+    }
+
+    div:nth-of-type(2) {
+      grid-area: deux;
+    }
+
+    div:nth-of-type(3) {
+      grid-area: trois;
+    }
+  }
+}
