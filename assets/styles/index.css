@@ -392,4 +392,79 @@ section.booking .booking-left img {
 }
 section.booking .booking-right {
   background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.booking .booking-right h2 {
+  font-family: "allura";
+  text-transform: capitalize;
+  color: #a67245;
+  font-size: 3rem;
+}
+section.booking .booking-right h1 {
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-top: -20px;
+}
+section.booking .booking-right img {
+  margin: 30px 0 50px 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+section.booking .booking-right form {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20%;
+  -webkit-column-gap: 5%;
+     -moz-column-gap: 5%;
+          column-gap: 5%;
+}
+section.booking .booking-right form div {
+  border-bottom: 1px solid rgb(196, 195, 195);
+}
+section.booking .booking-right form input,
+section.booking .booking-right form select,
+section.booking .booking-right form label {
+  background: #eeeeee;
+  border: none;
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+section.booking .booking-right form .date input {
+  text-transform: lowercase;
+}
+section.booking .booking-right button {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+section.booking .booking-right button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
