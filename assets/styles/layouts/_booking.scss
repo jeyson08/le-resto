@@ -1,0 +1,59 @@
+section.booking {
+  background: $color5;
+  height: 650px;
+  width: 70%;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  .booking-left {
+    border: 1px dashed $color6;
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      color: $color6;
+      font-family: $font2;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: $color1;
+      text-transform: capitalize;
+      font-family: $font1;
+      font-size: 3.2rem;
+      margin-bottom: -20px;
+    }
+
+    h4 {
+      color: $color1;
+      font-family: $font2;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: white;
+      font-family: $font3;
+      text-align: center;
+    }
+
+    p:last-of-type:not(.week p, .weekend p) {
+      color: $color1;
+      font-family: $font2;
+      font-size: 1.4rem;
+    }
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+
+  .booking-right {
+    background: $color2;
+  }
+}
