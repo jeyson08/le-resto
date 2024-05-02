@@ -1,0 +1,69 @@
+footer {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .footer-left {
+    padding: 100px 10% 100px 30%;
+    background: url(../../assets/img/bg-footer.jpg);
+
+    h2 {
+      color: $color1;
+      font-family: $font1;
+      font-size: 3rem;
+    }
+
+    p {
+      color: $color7;
+      font-family: $font3;
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
+
+  .footer-right {
+    padding: 100px 30% 100px 10%;
+
+    p {
+      font-family: $font2;
+      color: $color6;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+
+    .newsletter {
+      input {
+        background: none;
+        border: 1px solid $color3;
+        color: $color3;
+        font-size: 1rem;
+        font-family: $font3;
+        padding: 10px;
+        width: 50%;
+        margin: 10px 0 50px 0;
+      }
+    }
+
+    .social {
+      display: flex;
+
+      ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $color3;
+        font-size: 1.2rem;
+
+        li {
+          cursor: pointer;
+          transition: 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
