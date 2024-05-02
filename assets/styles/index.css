@@ -666,4 +666,64 @@ section.event .event-container .heure {
 }
 section.event .event-container .heure i {
   margin-right: 5px;
+}
+
+section.ceo .ceo-container {
+  background: #eeeeee;
+  width: 65%;
+  height: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2% 5%;
+  position: relative;
+}
+section.ceo .ceo-container q {
+  font-family: "roboto";
+  font-size: 1.2rem;
+  line-height: 2;
+  text-align: center;
+  quotes: none;
+}
+section.ceo .ceo-container i {
+  font-size: 1.5rem;
+}
+section.ceo .ceo-container h1 {
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 1.6rem;
+  text-align: center;
+}
+section.ceo .ceo-container h2 {
+  font-family: "roboto";
+  text-transform: capitalize;
+  color: #a67245;
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+section.ceo .ceo-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  position: absolute;
+  top: -50px;
+}
+section.ceo .map {
+  height: 400px;
+  width: 100%;
+  background: url(../../assets/img/gmap.jpg) center/cover;
+  margin-top: -150px;
 }/*# sourceMappingURL=index.css.map */
