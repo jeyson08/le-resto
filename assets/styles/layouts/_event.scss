@@ -3,7 +3,7 @@ section.event {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 100px 0;
 
   h2 {
     font-family: $font1;
@@ -22,29 +22,148 @@ section.event {
 
   img {
     transform: scale(1.2);
-    margin: 30px 0;
+    margin: 30px 0 50px 0;
   }
 
   .event-container {
-    background: $color2;
     width: 65%;
+    height: 500px;
     display: grid;
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 3fr 3fr 4fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "un un trois"
       "deux deux trois";
+    row-gap: 5%;
+    column-gap: 2%;
 
-    div:first-of-type {
+    > div:first-child {
       grid-area: un;
+
+      .left {
+        background: url(../../assets/img/event-01.jpg) center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
-    div:nth-of-type(2) {
+    > div:nth-child(2) {
       grid-area: deux;
+
+      .left {
+        background: url(../../assets/img/event-02.jpg) center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
-    div:nth-of-type(3) {
+    > div:nth-child(3) {
       grid-area: trois;
+      background: url(../../assets/img/event-03.jpg) center/cover;
+      padding: 10%;
+    }
+
+    > *:not(:nth-child(3)) {
+      background: $color2;
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+    }
+
+    .event-date {
+      color: $color6;
+      background: $color4;
+      padding: 20px 30px;
+      font-family: $font3;
+      text-align: center;
+
+      > :first-child {
+        font-size: 2rem;
+      }
+      > :nth-child(2) {
+        text-transform: capitalize;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10%;
+
+      .info {
+        display: flex;
+        color: $color7;
+        font-family: $font3;
+        text-transform: capitalize;
+        font-size: 1rem;
+      }
+    }
+
+    h3 {
+      font-family: $font3;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      font-weight: 100;
+      font-size: 1.6rem;
+    }
+
+    button {
+      cursor: pointer;
+      width: 40%;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      font-family: $font2;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .solo {
+      background: $color2;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      h3 {
+        text-align: center;
+      }
+
+      .info {
+        display: flex;
+        color: $color7;
+        font-family: $font3;
+        text-transform: capitalize;
+        font-size: 1rem;
+      }
+    }
+
+    .lieu {
+      margin-right: 10px;
+      display: flex;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    .heure {
+      display: flex;
+
+      i {
+        margin-right: 5px;
+      }
     }
   }
 }

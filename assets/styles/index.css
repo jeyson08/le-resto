@@ -483,7 +483,7 @@ section.event {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 100px 0;
 }
 section.event h2 {
   font-family: "allura";
@@ -501,22 +501,169 @@ section.event h1 {
 section.event img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  margin: 30px 0;
+  margin: 30px 0 50px 0;
 }
 section.event .event-container {
-  background: #eeeeee;
   width: 65%;
+  height: 500px;
   display: grid;
-  grid-template-columns: 30% 30% 40%;
+  grid-template-columns: 3fr 3fr 4fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "un un trois" "deux deux trois";
+  row-gap: 5%;
+  -webkit-column-gap: 2%;
+     -moz-column-gap: 2%;
+          column-gap: 2%;
 }
-section.event .event-container div:first-of-type {
+section.event .event-container > div:first-child {
   grid-area: un;
 }
-section.event .event-container div:nth-of-type(2) {
+section.event .event-container > div:first-child .left {
+  background: url(../../assets/img/event-01.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.event .event-container > div:nth-child(2) {
   grid-area: deux;
 }
-section.event .event-container div:nth-of-type(3) {
+section.event .event-container > div:nth-child(2) .left {
+  background: url(../../assets/img/event-02.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.event .event-container > div:nth-child(3) {
   grid-area: trois;
+  background: url(../../assets/img/event-03.jpg) center/cover;
+  padding: 10%;
+}
+section.event .event-container > *:not(:nth-child(3)) {
+  background: #eeeeee;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+section.event .event-container .event-date {
+  color: white;
+  background: #21201e;
+  padding: 20px 30px;
+  font-family: "roboto";
+  text-align: center;
+}
+section.event .event-container .event-date > :first-child {
+  font-size: 2rem;
+}
+section.event .event-container .event-date > :nth-child(2) {
+  text-transform: capitalize;
+}
+section.event .event-container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10%;
+}
+section.event .event-container .right .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(196, 195, 195);
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+section.event .event-container h3 {
+  font-family: "roboto";
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 1.6rem;
+}
+section.event .event-container button {
+  cursor: pointer;
+  width: 40%;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+section.event .event-container button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section.event .event-container .solo {
+  background: #eeeeee;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+section.event .event-container .solo h3 {
+  text-align: center;
+}
+section.event .event-container .solo .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(196, 195, 195);
+  font-family: "roboto";
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+section.event .event-container .lieu {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.event .event-container .lieu i {
+  margin-right: 5px;
+}
+section.event .event-container .heure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.event .event-container .heure i {
+  margin-right: 5px;
 }/*# sourceMappingURL=index.css.map */
