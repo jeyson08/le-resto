@@ -11,6 +11,16 @@ section.ceo {
     padding: 2% 5%;
     position: relative;
 
+    @media screen and (max-width: 1400px) {
+      width: 80%;
+      height: 500px;
+    }
+
+    @media screen and (max-width: 800px) {
+      height: 800px;
+      padding: 10%;
+    }
+
     q {
       font-family: $font3;
       font-size: 1.2rem;

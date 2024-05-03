@@ -34,6 +34,16 @@ header {
   background: url("../../assets/img/bg-slider-06.jpg") center/cover;
   padding: 30px 15% 0 15%;
 }
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 30px 10% 0 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 30px 2% 0 2%;
+  }
+}
 header * {
   color: white;
 }
@@ -76,9 +86,19 @@ header nav ul:first-of-type {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
+@media screen and (max-width: 800px) {
+  header nav ul:first-of-type {
+    display: none;
+  }
+}
 header nav ul:nth-of-type(2) {
   width: 10%;
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  header nav ul:nth-of-type(2) {
+    width: 30%;
+  }
 }
 header .header-container {
   height: 70vh;
@@ -102,10 +122,21 @@ header .header-container h1 {
   font-size: 5rem;
   margin-top: -50px;
 }
+@media screen and (max-width: 800px) {
+  header .header-container h1 {
+    font-size: 3rem;
+    margin-top: -20px;
+  }
+}
 header .header-container h2 {
   font-family: "allura";
   font-size: 4rem;
   color: #a67245;
+}
+@media screen and (max-width: 800px) {
+  header .header-container h2 {
+    font-size: 2rem;
+  }
 }
 header .header-container p {
   font-family: "roboto";
@@ -113,11 +144,22 @@ header .header-container p {
   text-transform: uppercase;
   margin-top: 50px;
 }
+@media screen and (max-width: 800px) {
+  header .header-container p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
 
 section.discover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #eeeeee;
+}
+@media screen and (max-width: 800px) {
+  section.discover {
+    grid-template-columns: 1fr;
+  }
 }
 section.discover .discover-left {
   display: -webkit-box;
@@ -136,6 +178,11 @@ section.discover .discover-left {
   padding: 100px 2% 100px 2%;
   border: 1px dashed #a67245;
   margin: 2% 2% 2% 2%;
+}
+@media screen and (max-width: 800px) {
+  section.discover .discover-left {
+    padding: 100px 5% 100px 5%;
+  }
 }
 section.discover .discover-left h1 {
   font-family: "poppins";
@@ -215,11 +262,31 @@ section.menus ul {
           justify-content: space-between;
   margin: 0 0 30px 0;
 }
+@media screen and (max-width: 1500px) {
+  section.menus ul {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  section.menus ul {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.menus ul {
+    width: 90%;
+  }
+}
 section.menus ul li {
   color: white;
   font-family: "roboto";
   text-transform: uppercase;
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  section.menus ul li {
+    font-size: 0.8rem;
+  }
 }
 section.menus ul li::after {
   display: block;
@@ -241,7 +308,6 @@ section.menus .menu-container {
   width: 55%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   background: #eeeeee;
   border-top: 5px solid #a67245;
   padding: 50px 2% 50px 2%;
@@ -249,11 +315,37 @@ section.menus .menu-container {
   height: 860px;
   z-index: 2;
 }
+@media screen and (max-width: 800px) {
+  section.menus .menu-container {
+    grid-template-columns: 1fr;
+    height: 1700px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  section.menus .menu-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  section.menus .menu-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  section.menus .menu-container {
+    width: 96%;
+  }
+}
 section.menus .menu-container .menu {
   display: grid;
   grid-template-columns: 1fr 60% 1fr;
   border-bottom: 1px dashed #a67245;
   padding: 5% 0 5% 0;
+}
+@media screen and (max-width: 800px) {
+  section.menus .menu-container .menu {
+    padding: 1% 0 1% 0;
+  }
 }
 section.menus .menu-container .menu .menu-img {
   border-radius: 100px;
@@ -341,6 +433,31 @@ section.booking {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+@media screen and (max-width: 800px) {
+  section.booking {
+    display: block;
+    width: 100%;
+    height: 1400px;
+    padding-top: 2%;
+    margin: 0 auto 300px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  section.booking {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  section.booking {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  section.booking {
+    width: 100%;
+    grid-template-columns: 40% 60%;
+  }
+}
 section.booking .booking-left {
   border: 1px dashed white;
   margin: 10%;
@@ -356,6 +473,11 @@ section.booking .booking-left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  section.booking .booking-left {
+    height: 40%;
+  }
 }
 section.booking .booking-left h2 {
   color: white;
@@ -406,6 +528,11 @@ section.booking .booking-right {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 800px) {
+  section.booking .booking-right {
+    height: 60%;
+  }
+}
 section.booking .booking-right h2 {
   font-family: "allura";
   text-transform: capitalize;
@@ -433,6 +560,12 @@ section.booking .booking-right form {
   -webkit-column-gap: 5%;
      -moz-column-gap: 5%;
           column-gap: 5%;
+}
+@media screen and (max-width: 1100px) {
+  section.booking .booking-right form {
+    width: 60%;
+    grid-template-columns: 1fr;
+  }
 }
 section.booking .booking-right form div {
   border-bottom: 1px solid rgb(196, 195, 195);
@@ -464,6 +597,16 @@ section.booking .booking-right button {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+@media screen and (max-width: 1100px) {
+  section.booking .booking-right button {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.booking .booking-right button {
+    margin-top: 200px;
+  }
+}
 section.booking .booking-right button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -484,6 +627,11 @@ section.event {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto 100px 0;
+}
+@media screen and (max-width: 1500px) {
+  section.event {
+    display: none;
+  }
 }
 section.event h2 {
   font-family: "allura";
@@ -688,6 +836,18 @@ section.ceo .ceo-container {
   padding: 2% 5%;
   position: relative;
 }
+@media screen and (max-width: 1400px) {
+  section.ceo .ceo-container {
+    width: 80%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.ceo .ceo-container {
+    height: 800px;
+    padding: 10%;
+  }
+}
 section.ceo .ceo-container q {
   font-family: "roboto";
   font-size: 1.2rem;
@@ -733,9 +893,19 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 800px) {
+  footer {
+    display: block;
+  }
+}
 footer .footer-left {
   padding: 100px 10% 100px 30%;
   background: url(../../assets/img/bg-footer.jpg);
+}
+@media screen and (max-width: 800px) {
+  footer .footer-left {
+    display: none;
+  }
 }
 footer .footer-left h2 {
   color: #a67245;
@@ -750,6 +920,11 @@ footer .footer-left p {
 }
 footer .footer-right {
   padding: 100px 30% 100px 10%;
+}
+@media screen and (max-width: 800px) {
+  footer .footer-right {
+    padding: 100px 10% 100px 10%;
+  }
 }
 footer .footer-right p {
   font-family: "poppins";

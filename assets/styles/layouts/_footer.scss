@@ -3,9 +3,17 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+
   .footer-left {
     padding: 100px 10% 100px 30%;
     background: url(../../assets/img/bg-footer.jpg);
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
 
     h2 {
       color: $color1;
@@ -23,6 +31,10 @@ footer {
 
   .footer-right {
     padding: 100px 30% 100px 10%;
+
+    @media screen and (max-width: 800px) {
+      padding: 100px 10% 100px 10%;
+    }
 
     p {
       font-family: $font2;

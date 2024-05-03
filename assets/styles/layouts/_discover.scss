@@ -3,6 +3,10 @@ section.discover {
   grid-template-columns: 1fr 1fr;
   background: $color2;
 
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+
   .discover-left {
     display: flex;
     justify-content: center;
@@ -11,6 +15,10 @@ section.discover {
     padding: 100px 2% 100px 2%;
     border: 1px dashed $color1;
     margin: 2% 2% 2% 2%;
+
+    @media screen and (max-width: 800px) {
+      padding: 100px 5% 100px 5%;
+    }
 
     h1 {
       font-family: $font2;

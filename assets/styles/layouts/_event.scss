@@ -5,6 +5,10 @@ section.event {
   flex-direction: column;
   margin: 0 auto 100px 0;
 
+  @media screen and (max-width: 1500px) {
+    display: none;
+  }
+
   h2 {
     font-family: $font1;
     color: $color1;

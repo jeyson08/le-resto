@@ -3,8 +3,16 @@ header {
   background: url("../../assets/img/bg-slider-06.jpg") center/cover;
   padding: 30px 15% 0 15%;
 
+  @media screen and (max-width: 1300px) {
+    padding: 30px 10% 0 10%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 30px 2% 0 2%;
+  }
+
   * {
-    color: white;
+    color: $color6;
   }
 
   nav {
@@ -38,10 +46,18 @@ header {
         font-family: $font3;
         text-transform: uppercase;
         font-size: 0.8rem;
+
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
       }
       &:nth-of-type(2) {
         width: 10%;
         cursor: pointer;
+
+        @media screen and (max-width: 800px) {
+          width: 30%;
+        }
       }
     }
   }
@@ -58,12 +74,21 @@ header {
       text-transform: uppercase;
       font-size: 5rem;
       margin-top: -50px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 3rem;
+        margin-top: -20px;
+      }
     }
 
     h2 {
       font-family: $font1;
       font-size: 4rem;
       color: $color1;
+
+      @media screen and (max-width: 800px) {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -71,6 +96,11 @@ header {
       letter-spacing: 8px;
       text-transform: uppercase;
       margin-top: 50px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 0.8rem;
+        text-align: center;
+      }
     }
   }
 }
